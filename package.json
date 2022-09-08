@@ -1,0 +1,25 @@
+{
+  "name": "yoga-app-page.js-lit-html-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavilPopcharov/Yoga-app-page.js-lit-html-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavilPopcharov/Yoga-app-page.js-lit-html-/issues"
+  },
+  "homepage": "https://github.com/slavilPopcharov/Yoga-app-page.js-lit-html-#readme",
+  "dependencies": {
+    "html": "^1.0.0",
+    "lit": "^2.3.1",
+    "page": "^1.11.6"
+  }
+}
