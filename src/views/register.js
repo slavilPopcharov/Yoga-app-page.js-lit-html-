@@ -1,9 +1,6 @@
-
 import { html } from "../libs.js";
 
 const regURL = "https://parseapi.back4app.com/users"
-const host =  `https://parseapi.back4app.com`;
-const reg = `/classes/_User`;
 const regHeaders = {
     "X-Parse-Application-Id": "8J5b8Kw7u1lo50HpwzaFz2o7C2wjSakynw9CAyiG",
     "X-Parse-REST-API-Key": "uIT7J2zVNqn299XXz7S2tTaeWzPHokCYbw1SuunK",
