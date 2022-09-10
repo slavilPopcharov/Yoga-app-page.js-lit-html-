@@ -6,21 +6,21 @@ const homeTemplate = () => html ` <section id="dashboard-page" class="dashboard"
 <ul class="other-books-list">
     <li class="otherBooks">
         <h3>Adhomukha Svanasana</h3>
-        <p>Type: Fiction</p>
+       <!-- <p>Type: Fiction</p> -->
         <p class="img"><img src="./images/poses/adhomukha_svanasana.png"></p>
         <a class="button" href="#">Details</a>
     </li>
 
     <li class="otherBooks">
         <h3>Vira Bhadrasana</h3>
-        <p>Type: Other</p>
+        <!-- <p>Type: Fiction</p> -->
         <p class="img"><img src="/images/poses/virabhadrasana_i.png"></p>
         <a class="button" href="#">Details</a>
     </li>
 
     <li class="otherBooks">
         <h3>Dandayamna Bharmanasana</h3>
-        <p>Type: Classic</p>
+        <!-- <p>Type: Fiction</p> -->
         <p class="img"><img src="/images/poses/dandayamna_bharmanasana.png"></p>
         <a class="button" href="#">Details</a>
     </li>

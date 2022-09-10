@@ -3,7 +3,7 @@ import { html } from "../libs.js";
 const createTemplate = () => html ` <section id="create-page" class="create">
 <form id="create-form" action="" method="">
     <fieldset>
-        <legend>Add new Book</legend>
+        <legend>Add new Pose</legend>
         <p class="field">
             <label for="title">Title</label>
             <span class="input">
@@ -34,7 +34,7 @@ const createTemplate = () => html ` <section id="create-page" class="create">
                 </select>
             </span>
         </p>
-        <input class="button submit" type="submit" value="Add Book">
+        <input class="button submit" type="submit" value="Add Pose">
     </fieldset>
 </form>
 </section>`;
