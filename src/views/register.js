@@ -89,7 +89,7 @@ export function registerView(ctx) {
     
     setUserData(newUser)
     ctx.uppdateNav();
-    ctx.page.redirect("/");
+    ctx.page.redirect("/catalog");
     
   }
 }

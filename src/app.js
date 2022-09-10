@@ -1,17 +1,19 @@
 import { page, render } from "./libs.js";
 import { getUserData, setUserData } from "./util.js";
 import { createView } from "./views/create.js";
-import { homeView } from "./views/home.js";
+import { catalogView } from "./views/catalog.js";
 import { loginView } from "./views/login.js";
 import { registerView } from "./views/register.js"; // ADD GENDER CHOICE
 import { profileView } from "./views/userProfile.js";
+import { homeview } from "./views/home.js";
 
 const main = document.getElementById("site-content");
 const logOutBtn = document.getElementById("logoutBtn");
 logOutBtn.addEventListener("click", onLogout);
 
 page(decorateContext);
-page("/", homeView);
+page("/", homeview);
+page("/catalog", catalogView);
 page("/login", loginView);
 page("/register", registerView);
 page("/create", createView);
