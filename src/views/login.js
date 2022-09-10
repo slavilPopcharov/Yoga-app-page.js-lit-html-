@@ -1,4 +1,6 @@
+import { uppdateNav } from "../app.js";
 import { html } from "../libs.js";
+import { setUserData } from "../util.js";
 
 const liginURL = "https://parseapi.back4app.com/login";
 const regHeaders = {
@@ -54,21 +56,11 @@ export function loginView(ctx) {
         if(res.ok){
         const data = {email, password}
         const info = JSON.parse(await res.text())
-        console.log(info);
-        //Object { 
-        // objectId: "SlYPMHzhm1",
-        //  username: "Peter", 
-        //  createdAt: "2022-09-06T08:38:38.889Z", 
-        //  updatedAt: "2022-09-06T08:41:02.162Z", 
-        //  email: "peter@abv.bg",
-        //  sessionToken: "r:9758b2007f83dea76dd0e9ac1a928f0c"
-        // }
-        sessionStorage.setItem('userData', JSON.stringify(info))
-        
-           
+        //console.log(info) = Object {objectId,username:, createdAt, updatedAt, email,sessionToken"}
+        setUserData(info)   
         } 
       
-
+      ctx.uppdateNav()
       ctx.page.redirect("/myPoses");
     } catch (err) {
         alert(err.message);
